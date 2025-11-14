@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- A stylized 'g' for genart, resembling a generative spiral -->
+  <path 
+    fill="#FF8A00" 
+    d="M50,10 A40,40 0 1,1 10,50 M50,20 A30,30 0 1,1 20,50 M50,30 A20,20 0 1,1 30,50 M50,40 A10,10 0 1,1 40,50 M50,50 L50,70" 
+    stroke="#FF8A00" stroke-width="10" stroke-linecap="round" />
+</svg>

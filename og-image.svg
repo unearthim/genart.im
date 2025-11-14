@@ -1,0 +1,20 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+    <!-- Define fonts and background -->
+    <style>
+        .title { font-family: 'Roboto Mono', monospace; font-size: 96px; font-weight: 700; fill: #F8F7F4; text-anchor: middle; }
+        .subtitle { font-family: 'Inter', sans-serif; font-size: 36px; fill: #F8F7F4; text-anchor: middle; }
+    </style>
+    <rect width="1200" height="630" fill="#0A0E1B"/>
+
+    <!-- Subtle background pattern -->
+    <defs>
+        <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+            <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#FF8A00" stroke-width="1" opacity="0.1"/>
+        </pattern>
+    </defs>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+
+    <!-- Centered Text -->
+    <text x="600" y="300" class="title">genart.im</text>
+    <text x="600" y="365" class="subtitle">The Generative Art Foundry</text>
+</svg>
