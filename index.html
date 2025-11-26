@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- === 1. Primary Meta Tags === -->
     <title>The Generative Art Foundry | genart.im</title>
     <meta name="title" content="The Generative Art Foundry | genart.im">
     <meta name="description" content="An interactive Digital Monument by unearth.im. Use the prompt to unearth new digital artifacts from the generative ether.">
@@ -14,13 +13,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     
-    <!-- Canonical Link -->
     <link rel="canonical" href="https://genart.im/" />
  
-    <!-- === 2. Webmention Endpoint === -->
     <link rel="webmention" href="https://webmention.io/unearth.im/webmention" />
 
-    <!-- === 3. Open Graph / Facebook === -->
     <meta property="og:type" content="website"> 
     <meta property="og:url" content="https://genart.im/">
     <meta property="og:title" content="The Generative Art Foundry | genart.im">
@@ -28,19 +24,16 @@
     <meta property="og:image" content="https://genart.im/og-image.png">
     <meta property="og:site_name" content="genart.im">
 
-    <!-- === 4. Twitter Card === -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://genart.im/">
     <meta property="twitter:title" content="The Generative Art Foundry | genart.im">
     <meta property="twitter:description" content="An interactive Digital Monument by unearth.im. Use the prompt to unearth new digital artifacts from the generative ether.">
     <meta property="twitter:image" content="https://genart.im/og-image.png">
 
-    <!-- === 5. Favicons === -->
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="alternate icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-    <!-- Brand Color Meta Tags -->
     <meta name="theme-color" content="#F8F7F4">
     <meta name="msapplication-TileColor" content="#FF8A00">
     
@@ -140,10 +133,8 @@
 
             <div id="image-display" class="image-container w-full aspect-square rounded-lg flex items-center justify-center">
                 <p id="placeholder-text" class="text-gray-500">Your generated artifact will appear here.</p>
-                <!-- Loader and Image will be injected here -->
-            </div>
+                </div>
 
-            <!-- Excavation Report Section -->
             <div id="report-container" class="mt-6 hidden">
                 <div class="report-card fade-in">
                     <h3 class="font-mono text-xl font-bold text-amber-400 mb-4">Excavation Report</h3>
@@ -162,27 +153,22 @@
         </main>
     </div>
 
-    <!-- ... (All your sections for Archaeology, Voices, Field Notes, etc. remain here) ... -->
     <section class="w-full max-w-3xl mx-auto py-20 px-4">
         <div class="w-full max-w-lg mx-auto border-t border-gray-700 my-16"></div>
         <h2 class="font-mono text-3xl font-bold text-center text-white mb-12">A Brief Archaeology of Machine Creativity</h2>
         <div class="relative border-l-2 border-gray-700 ml-4 pl-8 space-y-16">
-            <!-- Timeline Item 1 -->
             <div class="timeline-item">
                 <h3 class="font-mono text-xl font-bold text-amber-400">1960s: The Algorithmic Dawn</h3>
                 <p class="text-gray-300 mt-2">The first "digital artifacts" weren't images, but plotter drawings. Artists like Vera Molnár and Frieder Nake wrote algorithms using early languages like FORTRAN, guiding a mechanical arm to draw with ink on paper. They weren't just creating art; they were designing systems to create art, exploring the boundaries of order and chaos.</p>
             </div>
-            <!-- Timeline Item 2 -->
             <div class="timeline-item">
                 <h3 class="font-mono text-xl font-bold text-amber-400">2010s: The AI Begins to Dream</h3>
                 <p class="text-gray-300 mt-2">A major shift occurred with the rise of neural networks. Google's DeepDream (2015) became famous for its psychedelic, pareidolia-filled images, showing that an AI could "hallucinate" based on what it had learned. This was followed by Generative Adversarial Networks (GANs), which could create stunningly realistic, yet entirely fictional, faces and objects.</p>
             </div>
-            <!-- Timeline Item 3 -->
             <div class="timeline-item">
                 <h3 class="font-mono text-xl font-bold text-amber-400">2020s: The Cambrian Explosion</h3>
                 <p class="text-gray-300 mt-2">Diffusion models (like DALL-E 2, Midjourney, and Stable Diffusion) changed everything. By learning to reverse a process of adding "noise" to an image, these models could generate breathtakingly coherent and complex art from a simple text prompt. The barrier to entry collapsed, and suddenly, millions could collaborate with an AI to bring their wildest visions to life.</p>
             </div>
-             <!-- Timeline Item 4 -->
              <div class="timeline-item">
                 <h3 class="font-mono text-xl font-bold text-amber-400">Today: Your Turn</h3>
                 <p class="text-gray-300 mt-2">Every image you generate is a part of this story. It's a collaboration between your human intent and the machine's vast, learned "imagination." It's not just a picture; it's a digital artifact of this unique moment in history. Go unearth something new.</p>
@@ -249,7 +235,8 @@
         <h2 class="font-mono text-3xl font-bold text-white mb-6">The Artifact is the Echo</h2>
         <p class="text-gray-300 text-lg leading-relaxed">
             You came here to create an image, but the image is not the final piece. It is a beautiful, strange, and fleeting echo from the machine—the result of a unique collaboration between your mind and its vast library of patterns. The true artifact, the piece of human ingenuity worth preserving, is the prompt you wrote. It is the story you chose to tell, the question you dared to ask. What will you unearth next?
-        </sctIion>
+        </p>
+    </section>
 
     <footer class="text-center pb-12 text-gray-500">
         <p>a digital monument by <a href="https://unearth.im" target="_blank" rel="noopener noreferrer" class="hover:text-[#FF8A00] transition">unearth.im</a></p>
@@ -259,7 +246,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             // === CONFIGURATION ===
             // ** ⬇️ ⬇️ ⬇️ YOUR PROXY URL IS NOW LIVE! ⬇️ ⬇️ ⬇️ **
-            const NEW_PROXY_URL = "https://us-central1-jojo-4b593.cloudfunctions.net/genartProxy";
+            const NEW_PROXY_URL = "https://genartproxy-ce7zb66hpq-uc.a.run.app";
             
             // --- DOM Elements ---
             const promptForm = document.getElementById('prompt-form');
@@ -404,7 +391,11 @@
                     }
                     
                     const result = await response.json();
-                    const base64Data = result.predictions?.[0]?.bytesBase64Encoded;
+                    
+                    // --- KEY FIX FOR GEMINI 2.5 FLASH IMAGE ---
+                    // Old Imagen: result.predictions[0].bytesBase64Encoded
+                    // New Gemini: result.candidates[0].content.parts[0].inlineData.data
+                    const base64Data = result.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
 
                     if (base64Data) {
                         currentImageUrl = `data:image/png;base64,${base64Data}`;
