@@ -4,6 +4,71 @@
 
 <head>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://genart.im/#content",
+          "url": "https://genart.im",
+          "name": "The Generative Art Foundry | genart.im",
+          "description": "An interactive Digital Monument by unearth.im. Use the prompt to unearth new digital artifacts from the generative ether.",
+          "artMedium": "Interactive AI-Assisted Generative Art",
+          "artForm": "Digital Monument",
+          "inLanguage": "en-US",
+          "datePublished": "2024-12-01",
+          "publisher": { "@id": "https://unearth.im/#organization" },
+          "isPartOf": { "@id": "https://genart.im/#website" },
+          "author": [
+            { "@id": "https://josiest.com/#person" },
+            { "@id": "https://felixvelas.co/#person" }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://genart.im/#website",
+          "url": "https://genart.im",
+          "name": "genart.im",
+          "publisher": { "@id": "https://unearth.im/#organization" }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://unearth.im/#organization",
+          "name": "unearth.im",
+          "url": "https://unearth.im",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://unearth.im/favicon-32x32.png"
+          },
+          "foundingDate": "2024",
+          "sameAs": [
+            "https://twitter.com/unearthim",
+            "https://github.com/unearthim"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://josiest.com/#person",
+          "name": "Josie Jefferson",
+          "url": "https://josiest.com",
+          "jobTitle": "Digital Archaeologist & Trust Architect",
+          "affiliation": { "@id": "https://unearth.im/#organization" },
+          "sameAs": ["https://notjojo.im"]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://felixvelas.co/#person",
+          "name": "Felix Velasco",
+          "url": "https://felixvelas.co",
+          "jobTitle": "Trust Architect & Digital Archaeologist",
+          "affiliation": { "@id": "https://unearth.im/#organization" },
+          "sameAs": ["https://www.linkedin.com/in/felix-velasco-b793015"]
+        }
+      ]
+    }
+    </script>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -506,7 +571,12 @@
 
     <footer class="text-center pb-12 text-gray-500">
 
-        <p>a digital monument by <a href="https://unearth.im" target="_blank" rel="noopener noreferrer" class="hover:text-[#FF8A00] transition">unearth.im</a></p>
+        <p>
+            <small>
+                a <b><a href="https://sentientification.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#FF8A00] transition">liminal mind meld</a></b> collaboration:<br>
+                digital monument by <b><a href="https://unearth.im" target="_blank" rel="noopener noreferrer" class="hover:text-[#FF8A00] transition">unearth.im</a></b> | <b><a href="https://archaeobytology.org" target="_blank" rel="noopener noreferrer" class="hover:text-[#FF8A00] transition">archive & anvil</a></b>
+            </small>
+        </p>
 
     </footer>
 
