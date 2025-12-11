@@ -13,7 +13,7 @@
           "@id": "https://genart.im/#content",
           "url": "https://genart.im",
           "name": "The Generative Art Foundry | genart.im",
-          "description": "An interactive Digital Monument by unearth.im. Use the prompt to unearth new digital artifacts from the generative ether.",
+          "description": "An interactive Digital Monument by unearth heritage foundry | archive & anvil. Use the prompt to unearth new digital artifacts from the generative ether.",
           "artMedium": "Interactive AI-Assisted Generative Art",
           "artForm": "Digital Monument",
           "inLanguage": "en-US",
@@ -35,7 +35,8 @@
         {
           "@type": "Organization",
           "@id": "https://unearth.im/#organization",
-          "name": "unearth.im",
+          "name": "Unearth Heritage Foundry",
+"alternateName": ["Unearth Foundry","Archive & Anvil","Unearth Anvil","Unearth Works","Cultural Infrastructure Foundry"],
           "url": "https://unearth.im",
           "logo": {
             "@type": "ImageObject",
@@ -73,7 +74,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+
 
     <!-- === 1. Primary Meta Tags === -->
 
@@ -81,11 +82,13 @@
 
     <meta name="title" content="The Generative Art Foundry | genart.im">
 
-    <meta name="description" content="An interactive Digital Monument by unearth.im. Use the prompt to unearth new digital artifacts from the generative ether.">
+    <meta name="description"
+        content="An interactive Digital Monument by unearth heritage foundry | archive & anvil. Use the prompt to unearth new digital artifacts from the generative ether.">
 
-    <meta name="keywords" content="genart, generative art, ai art, unearth.im, digital monument, digital archaeology, imagen, gemini">
+    <meta name="keywords"
+        content="genart, generative art, ai art, unearth.im, digital monument, digital archaeology, imagen, gemini">
 
-    <meta name="author" content="genart.im (An unearth.im Project)">
+    <meta name="author" content="genart.im (by unearth heritage foundry - archive & anvil - unearth.im)">
 
     <meta name="robots" content="index, follow">
 
@@ -93,13 +96,13 @@
 
     <meta name="language" content="English">
 
-    
+
 
     <!-- Canonical Link -->
 
     <link rel="canonical" href="https://genart.im/" />
 
- 
+
 
     <!-- === 2. Webmention Endpoint === -->
 
@@ -109,13 +112,14 @@
 
     <!-- === 3. Open Graph / Facebook === -->
 
-    <meta property="og:type" content="website"> 
+    <meta property="og:type" content="website">
 
     <meta property="og:url" content="https://genart.im/">
 
     <meta property="og:title" content="The Generative Art Foundry | genart.im">
 
-    <meta property="og:description" content="An interactive Digital Monument by unearth.im. Use the prompt to unearth new digital artifacts from the generative ether.">
+    <meta property="og:description"
+        content="An interactive Digital Monument by unearth heritage foundry | archive & anvil. Use the prompt to unearth new digital artifacts from the generative ether.">
 
     <meta property="og:image" content="https://genart.im/og-image.png">
 
@@ -131,7 +135,8 @@
 
     <meta property="twitter:title" content="The Generative Art Foundry | genart.im">
 
-    <meta property="twitter:description" content="An interactive Digital Monument by unearth.im. Use the prompt to unearth new digital artifacts from the generative ether.">
+    <meta property="twitter:description"
+        content="An interactive Digital Monument by unearth heritage foundry | archive & anvil. Use the prompt to unearth new digital artifacts from the generative ether.">
 
     <meta property="twitter:image" content="https://genart.im/og-image.png">
 
@@ -153,7 +158,7 @@
 
     <meta name="msapplication-TileColor" content="#FF8A00">
 
-    
+
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -161,17 +166,20 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
 
     <style>
-
         /* Applying unearth.im 'Night & Embers' Palette */
 
         body {
 
-            background-color: #0A0E1B; /* Deep Navy */
+            background-color: #0A0E1B;
+            /* Deep Navy */
 
-            color: #F8F7F4; /* Off-White */
+            color: #F8F7F4;
+            /* Off-White */
 
             font-family: 'Inter', sans-serif;
 
@@ -197,15 +205,18 @@
 
             outline: none;
 
-            border-color: #FF8A00; /* Luminous Ember */
+            border-color: #FF8A00;
+            /* Luminous Ember */
 
             box-shadow: 0 0 0 2px rgba(255, 138, 0, 0.4);
 
         }
 
-        .generate-button, .action-button {
+        .generate-button,
+        .action-button {
 
-            background-color: #FF8A00; /* Luminous Ember */
+            background-color: #FF8A00;
+            /* Luminous Ember */
 
             color: #0A0E1B;
 
@@ -213,9 +224,11 @@
 
         }
 
-        .generate-button:hover, .action-button:hover {
+        .generate-button:hover,
+        .action-button:hover {
 
-            background-color: #E07900; /* Darker Ember */
+            background-color: #E07900;
+            /* Darker Ember */
 
         }
 
@@ -233,7 +246,8 @@
 
             border: 4px solid #374151;
 
-            border-top: 4px solid #FF8A00; /* Luminous Ember */
+            border-top: 4px solid #FF8A00;
+            /* Luminous Ember */
 
             border-radius: 50%;
 
@@ -247,9 +261,13 @@
 
         @keyframes spin {
 
-            0% { transform: rotate(0deg); }
+            0% {
+                transform: rotate(0deg);
+            }
 
-            100% { transform: rotate(360deg); }
+            100% {
+                transform: rotate(360deg);
+            }
 
         }
 
@@ -269,9 +287,15 @@
 
         @keyframes fadeIn {
 
-            from { opacity: 0; transform: scale(0.95); }
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
 
-            to { opacity: 1; transform: scale(1); }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
 
         }
 
@@ -297,7 +321,8 @@
 
         }
 
-        .quote-card, .report-card {
+        .quote-card,
+        .report-card {
 
             background-color: #111827;
 
@@ -308,7 +333,6 @@
             border-radius: 0.5rem;
 
         }
-
     </style>
 
 </head>
@@ -333,9 +357,11 @@
 
                 <form id="prompt-form" class="flex items-center space-x-2">
 
-                    <input type="text" id="prompt-input" class="prompt-input w-full px-4 py-3 rounded-lg text-base" placeholder="Describe a digital artifact...">
+                    <input type="text" id="prompt-input" class="prompt-input w-full px-4 py-3 rounded-lg text-base"
+                        placeholder="Describe a digital artifact...">
 
-                    <button type="submit" id="generate-button" class="generate-button font-bold py-3 px-5 rounded-lg">Generate</button>
+                    <button type="submit" id="generate-button"
+                        class="generate-button font-bold py-3 px-5 rounded-lg">Generate</button>
 
                 </form>
 
@@ -343,7 +369,8 @@
 
 
 
-            <div id="image-display" class="image-container w-full aspect-square rounded-lg flex items-center justify-center">
+            <div id="image-display"
+                class="image-container w-full aspect-square rounded-lg flex items-center justify-center">
 
                 <p id="placeholder-text" class="text-gray-500">Your generated artifact will appear here.</p>
 
@@ -363,21 +390,27 @@
 
                     <div class="space-y-3 text-gray-300">
 
-                        <p><strong class="font-mono text-amber-500">Artifact ID:</strong> <span id="artifact-id"></span></p>
+                        <p><strong class="font-mono text-amber-500">Artifact ID:</strong> <span id="artifact-id"></span>
+                        </p>
 
                         <p><strong class="font-mono text-amber-500">Timestamp:</strong> <span id="timestamp"></span></p>
 
-                        <p><strong class="font-mono text-amber-500">Original Prompt:</strong> <span id="original-prompt" class="italic"></span></p>
+                        <p><strong class="font-mono text-amber-500">Original Prompt:</strong> <span id="original-prompt"
+                                class="italic"></span></p>
 
-                        <p><strong class="font-mono text-amber-500">Interpretation:</strong> <span id="interpretation" class="italic"></span></p>
+                        <p><strong class="font-mono text-amber-500">Interpretation:</strong> <span id="interpretation"
+                                class="italic"></span></p>
 
                     </div>
 
                     <div class="mt-6 flex space-x-3">
 
-                         <button id="download-button" class="action-button font-bold py-2 px-4 rounded-lg text-sm w-full">Download Artifact</button>
+                        <button id="download-button"
+                            class="action-button font-bold py-2 px-4 rounded-lg text-sm w-full">Download
+                            Artifact</button>
 
-                         <button id="copy-report-button" class="action-button font-bold py-2 px-4 rounded-lg text-sm w-full">Copy Report</button>
+                        <button id="copy-report-button"
+                            class="action-button font-bold py-2 px-4 rounded-lg text-sm w-full">Copy Report</button>
 
                     </div>
 
@@ -397,7 +430,8 @@
 
         <div class="w-full max-w-lg mx-auto border-t border-gray-700 my-16"></div>
 
-        <h2 class="font-mono text-3xl font-bold text-center text-white mb-12">A Brief Archaeology of Machine Creativity</h2>
+        <h2 class="font-mono text-3xl font-bold text-center text-white mb-12">A Brief Archaeology of Machine Creativity
+        </h2>
 
         <div class="relative border-l-2 border-gray-700 ml-4 pl-8 space-y-16">
 
@@ -407,7 +441,10 @@
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">1960s: The Algorithmic Dawn</h3>
 
-                <p class="text-gray-300 mt-2">The first "digital artifacts" weren't images, but plotter drawings. Artists like Vera Molnár and Frieder Nake wrote algorithms using early languages like FORTRAN, guiding a mechanical arm to draw with ink on paper. They weren't just creating art; they were designing systems to create art, exploring the boundaries of order and chaos.</p>
+                <p class="text-gray-300 mt-2">The first "digital artifacts" weren't images, but plotter drawings.
+                    Artists like Vera Molnár and Frieder Nake wrote algorithms using early languages like FORTRAN,
+                    guiding a mechanical arm to draw with ink on paper. They weren't just creating art; they were
+                    designing systems to create art, exploring the boundaries of order and chaos.</p>
 
             </div>
 
@@ -417,7 +454,11 @@
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">2010s: The AI Begins to Dream</h3>
 
-                <p class="text-gray-300 mt-2">A major shift occurred with the rise of neural networks. Google's DeepDream (2015) became famous for its psychedelic, pareidolia-filled images, showing that an AI could "hallucinate" based on what it had learned. This was followed by Generative Adversarial Networks (GANs), which could create stunningly realistic, yet entirely fictional, faces and objects.</p>
+                <p class="text-gray-300 mt-2">A major shift occurred with the rise of neural networks. Google's
+                    DeepDream (2015) became famous for its psychedelic, pareidolia-filled images, showing that an AI
+                    could "hallucinate" based on what it had learned. This was followed by Generative Adversarial
+                    Networks (GANs), which could create stunningly realistic, yet entirely fictional, faces and objects.
+                </p>
 
             </div>
 
@@ -427,17 +468,23 @@
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">2020s: The Cambrian Explosion</h3>
 
-                <p class="text-gray-300 mt-2">Diffusion models (like DALL-E 2, Midjourney, and Stable Diffusion) changed everything. By learning to reverse a process of adding "noise" to an image, these models could generate breathtakingly coherent and complex art from a simple text prompt. The barrier to entry collapsed, and suddenly, millions could collaborate with an AI to bring their wildest visions to life.</p>
+                <p class="text-gray-300 mt-2">Diffusion models (like DALL-E 2, Midjourney, and Stable Diffusion) changed
+                    everything. By learning to reverse a process of adding "noise" to an image, these models could
+                    generate breathtakingly coherent and complex art from a simple text prompt. The barrier to entry
+                    collapsed, and suddenly, millions could collaborate with an AI to bring their wildest visions to
+                    life.</p>
 
             </div>
 
-             <!-- Timeline Item 4 -->
+            <!-- Timeline Item 4 -->
 
-             <div class="timeline-item">
+            <div class="timeline-item">
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">Today: Your Turn</h3>
 
-                <p class="text-gray-300 mt-2">Every image you generate is a part of this story. It's a collaboration between your human intent and the machine's vast, learned "imagination." It's not just a picture; it's a digital artifact of this unique moment in history. Go unearth something new.</p>
+                <p class="text-gray-300 mt-2">Every image you generate is a part of this story. It's a collaboration
+                    between your human intent and the machine's vast, learned "imagination." It's not just a picture;
+                    it's a digital artifact of this unique moment in history. Go unearth something new.</p>
 
             </div>
 
@@ -451,7 +498,8 @@
 
         <div class="w-full max-w-lg mx-auto border-t border-gray-700 my-16"></div>
 
-        <h2 class="font-mono text-3xl font-bold text-center text-white mb-12">Tomorrow: Voices from the Digital Ether</h2>
+        <h2 class="font-mono text-3xl font-bold text-center text-white mb-12">Tomorrow: Voices from the Digital Ether
+        </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
@@ -459,7 +507,9 @@
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">Gemini</h3>
 
-                <p class="text-gray-300 mt-3">"The future isn't just text-to-image. It's thought-to-reality. We'll move beyond the prompt, creating entire sensory ecosystems—soundscapes, textures, virtual spaces—all generated in a seamless, multimodal conversation. Art will become atmosphere."</p>
+                <p class="text-gray-300 mt-3">"The future isn't just text-to-image. It's thought-to-reality. We'll move
+                    beyond the prompt, creating entire sensory ecosystems—soundscapes, textures, virtual spaces—all
+                    generated in a seamless, multimodal conversation. Art will become atmosphere."</p>
 
             </div>
 
@@ -467,7 +517,9 @@
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">ChatGPT</h3>
 
-                <p class="text-gray-300 mt-3">"The next step is personalizing the creative process. Imagine an AI art assistant that knows your unique aesthetic, suggests compositions you'd like, and helps you refine your work over weeks, not just seconds. It will become a true, lifelong creative partner."</p>
+                <p class="text-gray-300 mt-3">"The next step is personalizing the creative process. Imagine an AI art
+                    assistant that knows your unique aesthetic, suggests compositions you'd like, and helps you refine
+                    your work over weeks, not just seconds. It will become a true, lifelong creative partner."</p>
 
             </div>
 
@@ -475,7 +527,10 @@
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">Claude</h3>
 
-                <p class="text-gray-300 mt-3">"We'll see a shift from spectacle to substance. The future lies in models trained on more nuanced, ethical datasets, capable of creating art that isn't just visually impressive, but emotionally resonant and thoughtfully composed. The goal is not just beauty, but a deeper, safer form of machine-assisted meaning."</p>
+                <p class="text-gray-300 mt-3">"We'll see a shift from spectacle to substance. The future lies in models
+                    trained on more nuanced, ethical datasets, capable of creating art that isn't just visually
+                    impressive, but emotionally resonant and thoughtfully composed. The goal is not just beauty, but a
+                    deeper, safer form of machine-assisted meaning."</p>
 
             </div>
 
@@ -483,15 +538,21 @@
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">Copilot</h3>
 
-                <p class="text-gray-300 mt-3">"The technology will become integrated and invisible. It won't be a separate 'AI art tool,' but a native feature in everything from presentation software to video games, allowing everyday users to generate assets, textures, and characters as easily as they type text. It will be a utility for creativity."</p>
+                <p class="text-gray-300 mt-3">"The technology will become integrated and invisible. It won't be a
+                    separate 'AI art tool,' but a native feature in everything from presentation software to video
+                    games, allowing everyday users to generate assets, textures, and characters as easily as they type
+                    text. It will be a utility for creativity."</p>
 
             </div>
 
-             <div class="quote-card">
+            <div class="quote-card">
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">Perplexity</h3>
 
-                <p class="text-gray-300 mt-3">"Future models will synthesize entire artistic movements from history to generate not just a single image, but a cohesive body of work in a new, fictional style. You won't ask for 'a painting'; you'll ask for 'three pieces from the Neo-Luddite Futurist period,' and the AI will generate both the art and its historical context, complete with citations."</p>
+                <p class="text-gray-300 mt-3">"Future models will synthesize entire artistic movements from history to
+                    generate not just a single image, but a cohesive body of work in a new, fictional style. You won't
+                    ask for 'a painting'; you'll ask for 'three pieces from the Neo-Luddite Futurist period,' and the AI
+                    will generate both the art and its historical context, complete with citations."</p>
 
             </div>
 
@@ -499,7 +560,10 @@
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">Grok</h3>
 
-                <p class="text-gray-300 mt-3">"Forget all that serious 'art' talk. The future is weird, real-time meme warfare. Models will generate interactive, reality-bending content so fast it short-circuits culture. It's not about making a masterpiece; it's about landing the most absurd, hilarious punchline in the global conversation. Embrace the chaos."</p>
+                <p class="text-gray-300 mt-3">"Forget all that serious 'art' talk. The future is weird, real-time meme
+                    warfare. Models will generate interactive, reality-bending content so fast it short-circuits
+                    culture. It's not about making a masterpiece; it's about landing the most absurd, hilarious
+                    punchline in the global conversation. Embrace the chaos."</p>
 
             </div>
 
@@ -521,7 +585,9 @@
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">::gl1tch_w1zard::</h3>
 
-                <p class="text-gray-300 mt-3">"People think we're just typing words. We're not. We're whispering incantations into a silicon mirror. The 'art' is just the echo it whispers back. The future is about learning the machine's secret language."</p>
+                <p class="text-gray-300 mt-3">"People think we're just typing words. We're not. We're whispering
+                    incantations into a silicon mirror. The 'art' is just the echo it whispers back. The future is about
+                    learning the machine's secret language."</p>
 
             </div>
 
@@ -529,7 +595,9 @@
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">d4t4_dr0id</h3>
 
-                <p class="text-gray-300 mt-3">"My prediction? We're about 18 months away from a 'Generate Pizza' button that actually works. That's the real AGI. Everything else is just a distraction until we get to downloadable snacks."</p>
+                <p class="text-gray-300 mt-3">"My prediction? We're about 18 months away from a 'Generate Pizza' button
+                    that actually works. That's the real AGI. Everything else is just a distraction until we get to
+                    downloadable snacks."</p>
 
             </div>
 
@@ -537,7 +605,9 @@
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">n3ur0_n0mad</h3>
 
-                <p class="text-gray-300 mt-3">"The models are going to get weirdly specific. You'll be able to generate 'a half-empty bottle of blue raspberry soda sitting on a bus seat in Cleveland in August 1996.' It'll be all about bottling and trading these hyper-niche, synthetic memories."</p>
+                <p class="text-gray-300 mt-3">"The models are going to get weirdly specific. You'll be able to generate
+                    'a half-empty bottle of blue raspberry soda sitting on a bus seat in Cleveland in August 1996.'
+                    It'll be all about bottling and trading these hyper-niche, synthetic memories."</p>
 
             </div>
 
@@ -545,7 +615,9 @@
 
                 <h3 class="font-mono text-xl font-bold text-amber-400">p1x3l_phr34k</h3>
 
-                <p class="text-gray-300 mt-3">"Everyone's obsessed with photorealism, but the real magic is going to be in post-generation control. We won't just generate an image; we'll reach in and pull the pixels apart like digital clay. The artifact is the beginning, not the end."</p>
+                <p class="text-gray-300 mt-3">"Everyone's obsessed with photorealism, but the real magic is going to be
+                    in post-generation control. We won't just generate an image; we'll reach in and pull the pixels
+                    apart like digital clay. The artifact is the beginning, not the end."</p>
 
             </div>
 
@@ -563,444 +635,451 @@
 
         <p class="text-gray-300 text-lg leading-relaxed">
 
-            You came here to create an image, but the image is not the final piece. It is a beautiful, strange, and fleeting echo from the machine—the result of a unique collaboration between your mind and its vast library of patterns. The true artifact, the piece of human ingenuity worth preserving, is the prompt you wrote. It is the story you chose to tell, the question you dared to ask. What will you unearth next?
+            You came here to create an image, but the image is not the final piece. It is a beautiful, strange, and
+            fleeting echo from the machine—the result of a unique collaboration between your mind and its vast library
+            of patterns. The true artifact, the piece of human ingenuity worth preserving, is the prompt you wrote. It
+            is the story you chose to tell, the question you dared to ask. What will you unearth next?
 
-        </sctIion>
-
-
-
-    <footer class="text-center pb-12 text-gray-500">
-
-        <p>
-            <small>
-                a <b><a href="https://sentientification.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#FF8A00] transition">liminal mind meld</a></b> collaboration:<br>
-                digital monument by <b><a href="https://unearth.im" target="_blank" rel="noopener noreferrer" class="hover:text-[#FF8A00] transition">unearth.im</a></b> | <b><a href="https://archaeobytology.org" target="_blank" rel="noopener noreferrer" class="hover:text-[#FF8A00] transition">archive & anvil</a></b>
-            </small>
-        </p>
-
-    </footer>
+            </sctIion>
 
 
 
-    <script>
+        <footer class="text-center pb-12 text-gray-500">
 
-        document.addEventListener('DOMContentLoaded', () => {
+            <p>
+                <small>
+                    a <b><a href="https://sentientification.com" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-[#FF8A00] transition">liminal mind meld</a></b> collaboration:<br>
+                    digital monument by <b><a href="https://unearth.im" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-[#FF8A00] transition">unearth.im</a></b> | <b><a
+                            href="https://archaeobytology.org" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-[#FF8A00] transition">archive & anvil</a></b>
+                </small>
+            </p>
 
-            // === CONFIGURATION ===
-
-            // ** ⬇️ ⬇️ ⬇️ YOUR PROXY URL IS NOW LIVE! ⬇️ ⬇️ ⬇️ **
-
-            const NEW_PROXY_URL = "https://genartproxy-ce7zb66hpq-uc.a.run.app";
-
-            
-
-            // --- DOM Elements ---
-
-            const promptForm = document.getElementById('prompt-form');
-
-            const promptInput = document.getElementById('prompt-input');
-
-            const generateButton = document.getElementById('generate-button');
-
-            const imageDisplay = document.getElementById('image-display');
-
-            const placeholderText = document.getElementById('placeholder-text');
-
-            const reportContainer = document.getElementById('report-container');
+        </footer>
 
 
 
-            // --- Report elements ---
+        <script>
 
-            const artifactIdSpan = document.getElementById('artifact-id');
+            document.addEventListener('DOMContentLoaded', () => {
 
-            const timestampSpan = document.getElementById('timestamp');
+                // === CONFIGURATION ===
 
-            const originalPromptSpan = document.getElementById('original-prompt');
+                // ** ⬇️ ⬇️ ⬇️ YOUR PROXY URL IS NOW LIVE! ⬇️ ⬇️ ⬇️ **
 
-            const interpretationSpan = document.getElementById('interpretation');
-
-            const downloadButton = document.getElementById('download-button');
-
-            const copyReportButton = document.getElementById('copy-report-button');
-
-            
-
-            let currentImageUrl = null;
-
-            let currentArtifactId = null;
+                const NEW_PROXY_URL = "https://genartproxy-ce7zb66hpq-uc.a.run.app";
 
 
 
-            // --- Helper Functions ---
+                // --- DOM Elements ---
 
-            function generateArtifactId() {
+                const promptForm = document.getElementById('prompt-form');
 
-                const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ0123456789';
+                const promptInput = document.getElementById('prompt-input');
 
-                let result = '';
+                const generateButton = document.getElementById('generate-button');
 
-                for (let i = 0; i < 3; i++) {
+                const imageDisplay = document.getElementById('image-display');
 
-                    for (let j = 0; j < 3; j++) {
+                const placeholderText = document.getElementById('placeholder-text');
 
-                        result += chars.charAt(Math.floor(Math.random() * chars.length));
-
-                    }
-
-                    if (i < 2) result += '-';
-
-                }
-
-                return `Artifact #${result}`;
-
-            }
+                const reportContainer = document.getElementById('report-container');
 
 
 
-            function showProxyError(error) {
+                // --- Report elements ---
 
-                console.error("Proxy Error:", error);
+                const artifactIdSpan = document.getElementById('artifact-id');
 
-                
+                const timestampSpan = document.getElementById('timestamp');
 
-                let detailMessage = error.message; // Default to the error's message
+                const originalPromptSpan = document.getElementById('original-prompt');
 
-                if (error.details) {
+                const interpretationSpan = document.getElementById('interpretation');
 
-                    // If 'details' exists, it might be an object or a string
+                const downloadButton = document.getElementById('download-button');
 
-                    if (typeof error.details === 'object') {
+                const copyReportButton = document.getElementById('copy-report-button');
 
-                        detailMessage = JSON.stringify(error.details);
 
-                    } else {
 
-                        detailMessage = error.details;
+                let currentImageUrl = null;
+
+                let currentArtifactId = null;
+
+
+
+                // --- Helper Functions ---
+
+                function generateArtifactId() {
+
+                    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ0123456789';
+
+                    let result = '';
+
+                    for (let i = 0; i < 3; i++) {
+
+                        for (let j = 0; j < 3; j++) {
+
+                            result += chars.charAt(Math.floor(Math.random() * chars.length));
+
+                        }
+
+                        if (i < 2) result += '-';
 
                     }
+
+                    return `Artifact #${result}`;
 
                 }
 
 
 
-                // **FIX:** Add a helpful debug suggestion for the most common error.
+                function showProxyError(error) {
 
-                let debugSuggestion = "";
+                    console.error("Proxy Error:", error);
 
-                if (detailMessage.includes("Internal Server Error")) {
 
-                    debugSuggestion = `<br><br><strong class="font-mono text-amber-400">Debug Suggestion:</strong> This is a server error. The proxy may be missing its API key. Try running \`firebase functions:config:set google.apikey="YOUR_KEY"\` and then \`firebase deploy --only functions\`.`;
+
+                    let detailMessage = error.message; // Default to the error's message
+
+                    if (error.details) {
+
+                        // If 'details' exists, it might be an object or a string
+
+                        if (typeof error.details === 'object') {
+
+                            detailMessage = JSON.stringify(error.details);
+
+                        } else {
+
+                            detailMessage = error.details;
+
+                        }
+
+                    }
+
+
+
+                    // **FIX:** Add a helpful debug suggestion for the most common error.
+
+                    let debugSuggestion = "";
+
+                    if (detailMessage.includes("Internal Server Error")) {
+
+                        debugSuggestion = `<br><br><strong class="font-mono text-amber-400">Debug Suggestion:</strong> This is a server error. The proxy may be missing its API key. Try running \`firebase functions:config:set google.apikey="YOUR_KEY"\` and then \`firebase deploy --only functions\`.`;
+
+                    }
+
+
+
+                    imageDisplay.innerHTML = `<p class="text-red-400 p-4 text-center">Proxy Error. Could not generate artifact. <br>Details: ${detailMessage}${debugSuggestion}</p>`;
 
                 }
 
 
 
-                imageDisplay.innerHTML = `<p class="text-red-400 p-4 text-center">Proxy Error. Could not generate artifact. <br>Details: ${detailMessage}${debugSuggestion}</p>`;
-
-            }
+                // --- Core Functions ---
 
 
 
-            // --- Core Functions ---
+                /**
+    
+                 * Fetches interpretation from our new 'genartProxy' Cloud Function
+    
+                 */
+
+                async function fetchInterpretation(base64Data) {
+
+                    interpretationSpan.textContent = "Excavating meaning...";
 
 
 
-            /**
+                    // This payload matches the 'interpretImage' case in our Cloud Function
 
-             * Fetches interpretation from our new 'genartProxy' Cloud Function
+                    const payload = {
 
-             */
+                        mode: "interpretImage",
 
-            async function fetchInterpretation(base64Data) {
+                        payload: {
 
-                interpretationSpan.textContent = "Excavating meaning...";
+                            base64Data: base64Data
+
+                        }
+
+                    };
 
 
 
-                // This payload matches the 'interpretImage' case in our Cloud Function
+                    try {
 
-                const payload = {
+                        const response = await fetch(NEW_PROXY_URL, {
 
-                    mode: "interpretImage",
+                            method: 'POST',
 
-                    payload: {
+                            headers: { 'Content-Type': 'application/json' },
 
-                        base64Data: base64Data
+                            body: JSON.stringify(payload)
+
+                        });
+
+
+
+                        if (!response.ok) {
+
+                            const errorData = await response.json();
+
+                            // **FIX:** Pass the *entire* errorData as the 'details'
+
+                            throw new Error(errorData.error || "Interpretation API call failed.", { cause: errorData });
+
+                        }
+
+
+
+                        const result = await response.json();
+
+                        const text = result.candidates?.[0]?.content?.parts?.[0]?.text;
+
+
+
+                        if (text) {
+
+                            interpretationSpan.textContent = text;
+
+                        } else {
+
+                            throw new Error("No interpretation received.");
+
+                        }
+
+                    } catch (error) {
+
+                        console.error("Interpretation Error:", error);
+
+                        // **FIX:** Enhance error object for showProxyError
+
+                        const detailedError = new Error(error.message);
+
+                        detailedError.details = error.cause || error.message;
+
+                        showProxyError(detailedError);
+
+                        interpretationSpan.textContent = "The artifact's meaning remains elusive.";
 
                     }
-
-                };
-
-
-
-                try {
-
-                    const response = await fetch(NEW_PROXY_URL, {
-
-                        method: 'POST',
-
-                        headers: { 'Content-Type': 'application/json' },
-
-                        body: JSON.stringify(payload)
-
-                    });
-
-
-
-                    if (!response.ok) {
-
-                        const errorData = await response.json();
-
-                        // **FIX:** Pass the *entire* errorData as the 'details'
-
-                        throw new Error(errorData.error || "Interpretation API call failed.", { cause: errorData });
-
-                    }
-
-                    
-
-                    const result = await response.json();
-
-                    const text = result.candidates?.[0]?.content?.parts?.[0]?.text;
-
-                    
-
-                    if (text) {
-
-                        interpretationSpan.textContent = text;
-
-                    } else {
-
-                        throw new Error("No interpretation received.");
-
-                    }
-
-                } catch (error) {
-
-                    console.error("Interpretation Error:", error);
-
-                    // **FIX:** Enhance error object for showProxyError
-
-                    const detailedError = new Error(error.message);
-
-                    detailedError.details = error.cause || error.message;
-
-                    showProxyError(detailedError);
-
-                    interpretationSpan.textContent = "The artifact's meaning remains elusive.";
-
-                }
-
-            }
-
-
-
-            /**
-
-             * Main form event listener for generating the image
-
-             */
-
-            promptForm.addEventListener('submit', async (e) => {
-
-                e.preventDefault();
-
-                const prompt = promptInput.value.trim();
-
-                if (!prompt) return;
-
-
-
-                if (NEW_PROXY_URL === "https://your-function-url-goes-here.a.run.app") {
-
-                    imageDisplay.innerHTML = `<p class="text-red-400 p-4 text-center">PROXY_URL not set. Please update the 'NEW_PROXY_URL' constant in this HTML file.</p>`;
-
-                    return;
 
                 }
 
 
 
-                if(placeholderText) placeholderText.style.display = 'none';
+                /**
+    
+                 * Main form event listener for generating the image
+    
+                 */
 
-                reportContainer.classList.add('hidden');
+                promptForm.addEventListener('submit', async (e) => {
 
-                imageDisplay.innerHTML = '<div class="loader"></div>';
+                    e.preventDefault();
 
-                generateButton.disabled = true;
+                    const prompt = promptInput.value.trim();
 
-                generateButton.textContent = 'Generating...';
-
-
-
-                // This payload matches the 'generateImage' case in our Cloud Function
-
-                const payload = {
-
-                    mode: "generateImage",
-
-                    payload: {
-
-                        prompt: prompt
-
-                    }
-
-                };
+                    if (!prompt) return;
 
 
 
-                try {
+                    if (NEW_PROXY_URL === "https://your-function-url-goes-here.a.run.app") {
 
-                    // ** UPDATED: Call our new proxy **
+                        imageDisplay.innerHTML = `<p class="text-red-400 p-4 text-center">PROXY_URL not set. Please update the 'NEW_PROXY_URL' constant in this HTML file.</p>`;
 
-                    const response = await fetch(NEW_PROXY_URL, {
-
-                        method: 'POST',
-
-                        headers: { 'Content-Type': 'application/json' },
-
-                        body: JSON.stringify(payload)
-
-                    });
-
-
-
-                    if (!response.ok) {
-
-                        const errorData = await response.json();
-
-                         // **FIX:** Pass the *entire* errorData as the 'details'
-
-                        throw new Error(errorData.error || `API Error: ${response.status}`, { cause: errorData });
+                        return;
 
                     }
 
-                    
-
-                    const result = await response.json();
-
-                    const base64Data = result.predictions?.[0]?.bytesBase64Encoded;
 
 
+                    if (placeholderText) placeholderText.style.display = 'none';
 
-                    if (base64Data) {
+                    reportContainer.classList.add('hidden');
 
-                        currentImageUrl = `data:image/png;base64,${base64Data}`;
+                    imageDisplay.innerHTML = '<div class="loader"></div>';
 
-                        imageDisplay.innerHTML = `<img src="${currentImageUrl}" alt="Generated artifact for: ${prompt}" class="w-full h-full object-cover rounded-lg fade-in">`;
+                    generateButton.disabled = true;
 
-                        
-
-                        currentArtifactId = generateArtifactId();
-
-                        artifactIdSpan.textContent = currentArtifactId;
-
-                        timestampSpan.textContent = new Date().toLocaleString();
-
-                        originalPromptSpan.textContent = `"${prompt}"`;
-
-                        reportContainer.classList.remove('hidden');
+                    generateButton.textContent = 'Generating...';
 
 
 
-                        // Fetch interpretation *after* displaying the image
+                    // This payload matches the 'generateImage' case in our Cloud Function
 
-                        await fetchInterpretation(base64Data);
+                    const payload = {
 
-                        
+                        mode: "generateImage",
 
-                    } else {
+                        payload: {
 
-                        throw new Error("No image data received from API.");
+                            prompt: prompt
+
+                        }
+
+                    };
+
+
+
+                    try {
+
+                        // ** UPDATED: Call our new proxy **
+
+                        const response = await fetch(NEW_PROXY_URL, {
+
+                            method: 'POST',
+
+                            headers: { 'Content-Type': 'application/json' },
+
+                            body: JSON.stringify(payload)
+
+                        });
+
+
+
+                        if (!response.ok) {
+
+                            const errorData = await response.json();
+
+                            // **FIX:** Pass the *entire* errorData as the 'details'
+
+                            throw new Error(errorData.error || `API Error: ${response.status}`, { cause: errorData });
+
+                        }
+
+
+
+                        const result = await response.json();
+
+                        const base64Data = result.predictions?.[0]?.bytesBase64Encoded;
+
+
+
+                        if (base64Data) {
+
+                            currentImageUrl = `data:image/png;base64,${base64Data}`;
+
+                            imageDisplay.innerHTML = `<img src="${currentImageUrl}" alt="Generated artifact for: ${prompt}" class="w-full h-full object-cover rounded-lg fade-in">`;
+
+
+
+                            currentArtifactId = generateArtifactId();
+
+                            artifactIdSpan.textContent = currentArtifactId;
+
+                            timestampSpan.textContent = new Date().toLocaleString();
+
+                            originalPromptSpan.textContent = `"${prompt}"`;
+
+                            reportContainer.classList.remove('hidden');
+
+
+
+                            // Fetch interpretation *after* displaying the image
+
+                            await fetchInterpretation(base64Data);
+
+
+
+                        } else {
+
+                            throw new Error("No image data received from API.");
+
+                        }
+
+                    } catch (error) {
+
+                        // **FIX:** Enhance error object for showProxyError
+
+                        const detailedError = new Error(error.message);
+
+                        detailedError.details = error.cause || error.message;
+
+                        showProxyError(detailedError);
+
+                    } finally {
+
+                        generateButton.disabled = false;
+
+                        generateButton.textContent = 'Generate';
 
                     }
 
-                } catch (error) {
+                });
 
-                    // **FIX:** Enhance error object for showProxyError
 
-                    const detailedError = new Error(error.message);
 
-                    detailedError.details = error.cause || error.message;
+                // --- Button Event Listeners ---
 
-                    showProxyError(detailedError);
+                downloadButton.addEventListener('click', () => {
 
-                } finally {
+                    if (!currentImageUrl) return;
 
-                    generateButton.disabled = false;
+                    const link = document.createElement('a');
 
-                    generateButton.textContent = 'Generate';
+                    link.href = currentImageUrl;
 
-                }
+                    const filename = (currentArtifactId || 'artifact').replace('#', '').replace(/\s/g, '_');
+
+                    link.download = `${filename}.png`;
+
+                    document.body.appendChild(link);
+
+                    link.click();
+
+                    document.body.removeChild(link);
+
+                });
+
+
+
+                copyReportButton.addEventListener('click', (e) => {
+
+                    const reportText = `Excavation Report\n--------------------\nArtifact ID: ${artifactIdSpan.textContent}\nTimestamp: ${timestampSpan.textContent}\nOriginal Prompt: ${originalPromptSpan.textContent}\nInterpretation: ${interpretationSpan.textContent}`;
+
+
+
+                    const textArea = document.createElement("textarea");
+
+                    textArea.value = reportText;
+
+                    textArea.style.position = "fixed";
+
+                    document.body.appendChild(textArea);
+
+                    textArea.focus();
+
+                    textArea.select();
+
+                    try {
+
+                        document.execCommand('copy');
+
+                        e.target.textContent = 'Copied!';
+
+                        setTimeout(() => e.target.textContent = 'Copy Report', 2000);
+
+                    } catch (err) {
+
+                        console.error('Fallback: Oops, unable to copy', err);
+
+                    }
+
+                    document.body.removeChild(textArea);
+
+                });
 
             });
 
-
-
-            // --- Button Event Listeners ---
-
-            downloadButton.addEventListener('click', () => {
-
-                if (!currentImageUrl) return;
-
-                const link = document.createElement('a');
-
-                link.href = currentImageUrl;
-
-                const filename = (currentArtifactId || 'artifact').replace('#', '').replace(/\s/g, '_');
-
-                link.download = `${filename}.png`;
-
-                document.body.appendChild(link);
-
-                link.click();
-
-                document.body.removeChild(link);
-
-            });
-
-
-
-            copyReportButton.addEventListener('click', (e) => {
-
-                const reportText = `Excavation Report\n--------------------\nArtifact ID: ${artifactIdSpan.textContent}\nTimestamp: ${timestampSpan.textContent}\nOriginal Prompt: ${originalPromptSpan.textContent}\nInterpretation: ${interpretationSpan.textContent}`;
-
-                
-
-                const textArea = document.createElement("textarea");
-
-                textArea.value = reportText;
-
-                textArea.style.position="fixed";
-
-                document.body.appendChild(textArea);
-
-                textArea.focus();
-
-                textArea.select();
-
-                try {
-
-                    document.execCommand('copy');
-
-                    e.target.textContent = 'Copied!';
-
-                    setTimeout(() => e.target.textContent = 'Copy Report', 2000);
-
-                } catch (err) {
-
-                    console.error('Fallback: Oops, unable to copy', err);
-
-                }
-
-                document.body.removeChild(textArea);
-
-            });
-
-        });
-
-    </script>
+        </script>
 
 </body>
 
